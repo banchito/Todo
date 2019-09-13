@@ -12,16 +12,18 @@
 		96FB472A23295E6E00645722 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96FB472823295E6E00645722 /* Main.storyboard */; };
 		96FB472C23295E6F00645722 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96FB472B23295E6F00645722 /* Assets.xcassets */; };
 		96FB472F23295E6F00645722 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96FB472D23295E6F00645722 /* LaunchScreen.storyboard */; };
+		96FB4737232C01F900645722 /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FB4736232C01F900645722 /* Items.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		96FB472123295E6D00645722 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FB472423295E6E00645722 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96FB472623295E6E00645722 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
+		96FB472623295E6E00645722 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TodoListViewController.swift; path = ../TodoListViewController.swift; sourceTree = "<group>"; };
 		96FB472923295E6E00645722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96FB472B23295E6F00645722 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96FB472E23295E6F00645722 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96FB473023295E6F00645722 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96FB4736232C01F900645722 /* Items.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				96FB472423295E6E00645722 /* AppDelegate.swift */,
-				96FB472623295E6E00645722 /* TodoListViewController.swift */,
-				96FB472823295E6E00645722 /* Main.storyboard */,
-				96FB472B23295E6F00645722 /* Assets.xcassets */,
-				96FB472D23295E6F00645722 /* LaunchScreen.storyboard */,
+				96FB4739232C022300645722 /* Controllers */,
+				96FB4738232C020C00645722 /* Data Model */,
+				96FB473A232C023600645722 /* Views */,
+				96FB473B232C024F00645722 /* Supporting Files */,
 				96FB473023295E6F00645722 /* Info.plist */,
 			);
 			path = Todo;
+			sourceTree = "<group>";
+		};
+		96FB4738232C020C00645722 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				96FB4736232C01F900645722 /* Items.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		96FB4739232C022300645722 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				96FB472623295E6E00645722 /* TodoListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		96FB473A232C023600645722 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96FB472823295E6E00645722 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		96FB473B232C024F00645722 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				96FB472B23295E6F00645722 /* Assets.xcassets */,
+				96FB472D23295E6F00645722 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96FB472723295E6E00645722 /* TodoListViewController.swift in Sources */,
+				96FB4737232C01F900645722 /* Items.swift in Sources */,
 				96FB472523295E6E00645722 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
